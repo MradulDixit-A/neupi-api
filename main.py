@@ -1,10 +1,13 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from credit_card_engine import CreditCardEngine
 from rules_config import RULES_CONFIG
 
 app = FastAPI()
+
+API_KEY = "NEUPI_API_KEY_2025_SECRET"
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -15,7 +18,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 CARDS = [
     {
@@ -41,6 +43,12 @@ class UserProfile(BaseModel):
     preferred_network: str
 
 @app.post("/recommend/cards")
-def recommend_cards(user: UserProfile):
+def recommend_cards(
+    user: UserProfile,
+    x_api_key: str = Header(None)
+):
+    if x_api_key != API_KEY:
+        raise HTTPException(status_code=403, detail="Invalid API Key")
+
     engine = CreditCardEngine(RULES_CONFIG)
     return engine.recommend(user.dict(), CARDS)
