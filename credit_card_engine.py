@@ -55,7 +55,7 @@ class CreditCardEngine:
         emi_ratio = self._emi_ratio(user)
 
         goal_types = []
-        for goal in user["primary_goal"]:
+        for goal in user.get("primary_goal", []):
             goal_types.extend(self.rules["goal_card_type_map"].get(goal, []))
 
         for card in cards:
