@@ -1,0 +1,146 @@
+[
+  {
+    "card_id": "amex_mrcc",
+    "display_name": "Amex Membership Rewards Credit Card",
+    "issuer": "American Express",
+    "network": "amex",
+    "tier": "mid",
+    "card_type": "rewards",
+
+    "annual_fee": 1500,
+    "fee_waiver_spend": 150000,
+
+    "min_income": 40000,
+    "min_credit_score": 700,
+
+    "emi_friendly": false,
+
+    "best_for": ["online", "shopping"],
+    "spend_bonus_category": ["online"],
+
+    "reward_strength": 8,
+    "travel_benefit_level": 4,
+    "lounge_access": 0,
+
+    "risk_profile_fit": ["low_risk", "moderate_risk"],
+
+    "welcome_benefit": "1,000 MR points on milestone spending",
+    "notes": "Great for reward points collectors"
+  },
+
+  {
+    "card_id": "hdfc_millennia",
+    "display_name": "HDFC Millennia Credit Card",
+    "issuer": "HDFC Bank",
+    "network": "visa",
+    "tier": "entry",
+    "card_type": "cashback",
+
+    "annual_fee": 1000,
+    "fee_waiver_spend": 100000,
+
+    "min_income": 25000,
+    "min_credit_score": 680,
+
+    "emi_friendly": true,
+
+    "best_for": ["online", "shopping"],
+    "spend_bonus_category": ["online", "bill_payments"],
+
+    "reward_strength": 7,
+    "travel_benefit_level": 2,
+    "lounge_access": 0,
+
+    "risk_profile_fit": ["moderate_risk"],
+
+    "welcome_benefit": "5% cashback on online partner spending",
+    "notes": "Good for new earners with digital spends"
+  },
+
+  {
+    "card_id": "sbi_prime",
+    "display_name": "SBI Card PRIME",
+    "issuer": "SBI Card",
+    "network": "visa",
+    "tier": "premium",
+    "card_type": "lifestyle",
+
+    "annual_fee": 3000,
+    "fee_waiver_spend": 300000,
+
+    "min_income": 75000,
+    "min_credit_score": 720,
+
+    "emi_friendly": false,
+
+    "best_for": ["dining", "shopping"],
+    "spend_bonus_category": ["dining", "grocery"],
+
+    "reward_strength": 8,
+    "travel_benefit_level": 6,
+    "lounge_access": 4,
+
+    "risk_profile_fit": ["low_risk"],
+
+    "welcome_benefit": "₹3000 worth vouchers",
+    "notes": "Suited for high-income salaried profiles"
+  },
+
+  {
+    "card_id": "axis_ace",
+    "display_name": "Axis Bank ACE Credit Card",
+    "issuer": "Axis Bank",
+    "network": "visa",
+    "tier": "entry",
+    "card_type": "cashback",
+
+    "annual_fee": 500,
+    "fee_waiver_spend": 50000,
+
+    "min_income": 20000,
+    "min_credit_score": 660,
+
+    "emi_friendly": true,
+
+    "best_for": ["online", "bill_payments"],
+    "spend_bonus_category": ["upi", "bill_payments"],
+
+    "reward_strength": 9,
+    "travel_benefit_level": 1,
+    "lounge_access": 0,
+
+    "risk_profile_fit": ["moderate_risk", "low_risk"],
+
+    "welcome_benefit": "5% cashback on bill payments",
+    "notes": "Great beginner cashback card"
+  },
+
+  {
+    "card_id": "icici_sapphiro",
+    "display_name": "ICICI Sapphiro",
+    "issuer": "ICICI Bank",
+    "network": "mastercard",
+    "tier": "super_premium",
+    "card_type": "lifestyle",
+
+    "annual_fee": 6500,
+    "fee_waiver_spend": 600000,
+
+    "min_income": 120000,
+    "min_credit_score": 740,
+
+    "emi_friendly": false,
+
+    "best_for": ["travel", "luxury"],
+    "spend_bonus_category": ["travel", "dining"],
+
+    "reward_strength": 7,
+    "travel_benefit_level": 9,
+    "lounge_access": 8,
+
+    "risk_profile_fit": ["low_risk"],
+
+    "welcome_benefit": "Luxury vouchers + lounge access",
+    "notes": "Designed for premium segment users"
+  }
+]
